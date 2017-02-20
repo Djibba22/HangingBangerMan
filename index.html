@@ -1,0 +1,95 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Baseball Trivia</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Playball" rel="stylesheet">
+</head>
+
+<body>
+	<!-- we need a container for the game -->
+	<div class ="container">
+	<div class="jumbotron text-center">
+		<h1>MLB Trivia</h1>
+    <p>
+      So, you think your a baller huh?
+    </p>
+    <h4>Play a little hang man and test your knowledge.</h4>
+    <button type="button" id="startGame" class="btn btn-primary">Play Now</button>
+	</div>
+	<!-- we need a div for the baseball cards -->
+	<div class="row">
+		<div class="col-sm-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong>You know this Guy?</strong></h3>
+				</div>
+				<div class="panel-body card-body">
+          <div id="playerImage"></div>
+				</div>
+			</div>
+		</div>
+		<!-- Div for the word to guess -->
+		<div class="col-sm-6">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title"><strong>Who am I ?</strong></h3>
+			</div>
+			<div class="panel-body">
+				<h3 id="wordblanks"></h3>
+				<div class = "row">
+					<div class="col-sm-6">
+						<strong>Wrong Guesses: </strong> <span id="wrongGuesses"></span>
+					</div>
+					<div class="col-sm-6">
+						<strong>Guesses Left: </strong> <span id="guessesLeft"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class ="row">
+		<div class="col-sm-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong>Players Career:</strong></h3>
+				</div>
+				<div class="panel-body">
+					<h3 id="hints"></h3>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title"><strong>Score Board</strong></h3>
+          <div class="panel-body">
+  					<h3 id="outs"></h3>
+  				</div>
+				</div>
+				<div class="panel-body">
+					<!-- When the players guesses run out they get a strike, when they only miss less than two letters they get a ball, 3 strikes game over  -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="assets/js/game.js"></script>
+</body>
+</html>

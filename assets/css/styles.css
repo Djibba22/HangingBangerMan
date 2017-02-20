@@ -1,0 +1,15 @@
+body{
+
+}
+#playerImage{
+  width:100%;
+}
+.card-body{
+  padding:0;
+}
+.player-card{
+ width:100%;
+}
+.container{max-width: 980px;padding-top: 50px;}
+.jumbotron{color:blue;font-family: 'Playball', cursive;}
+.jumbotron p{color:red;}
