@@ -3,7 +3,7 @@
 ____
 I wanted to create this game in complete vanilla Javascript. Using one object to hold the info and functions to perform individual tasks.
 
-*Tech Satck*
+**TECH STACK**
 * HTML
 * Bootstrap
 * Javascript
